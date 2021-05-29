@@ -48,8 +48,8 @@ class FibHeap:
 
 
     def iterRootList(self):
-        """ to print root list only, dont use to iterate root list in other
-        operations as root list changes """
+        """ to get root list only, dont use to iterate root list in other
+        operations like for loop, as root list changes """
         node = self.root_head
         while node:
             yield node
@@ -58,8 +58,8 @@ class FibHeap:
                 break
         
     def iterChildList(self,x):
-        """ to print root list only, dont use to iterate child list in other
-        operations as child list changes """
+        """ to get root list only, dont use to iterate child list in other
+        operations like for loop, as child list changes """
         node = x.child_head
         while node:
             yield node
