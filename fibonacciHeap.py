@@ -1,4 +1,28 @@
 """
+
+MIT License
+
+Copyright (c) 2021 Abhishek Verma
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+===========================================================================================================
 fibonacci heap is an unordered collection of binomial trees where each tree follows heap invariance.
 Time Complexities : extractMin: amortized O(lgn), deleteNode: amortized O(lgn) and rest have amortized O(1).
 
@@ -8,7 +32,8 @@ has a pointer to one of the child and children are linked in a CDLL as siblings.
 root list references : root_head and root_tail
 for each node have children, reference to child list through : child_head and child_tail
 
-Also upper bound on degree of FibHeap i.e. no of trees in a root list is log_phi(n) which is logarith of n with base equals to phi/goldenRatio.
+Also upper bound on degree of FibHeap i.e. no of trees in a root list is log_phi(n) which is 
+logarith of n with base equals to phi/goldenRatio.
  
 
 Refernce - CLRS
